@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>COSMOS - Más allá de las estrellas</title>
+
+    <!-- Conexión con CSS -->
+    <link rel="stylesheet" href="estilos.css">
+
+    <!-- Tipografías -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+
+        <nav class="navbar">
+
+            <a href="#inicio" class="logo">
+                <span>✦</span> COSMOS
+            </a>
+
+            <button class="menu-btn" id="menuBtn">
+                ☰
+            </button>
+
+            <ul class="menu" id="menu">
+
+                <li>
+                    <a href="#inicio">Inicio</a>
+                </li>
+
+                <li>
+                    <a href="#explorar">Explorar</a>
+                </li>
+
+                <li>
+                    <a href="#fenomenos">Fenómenos</a>
+                </li>
+
+                <li>
+                    <a href="#curiosidades">Curiosidades</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+
+        <!-- HERO / INICIO -->
+        <section class="hero" id="inicio">
+
+            <div class="hero-text">
+
+                <p class="subtitulo">
+                    EXPLORACIÓN ASTRONÓMICA
+                </p>
+
+                <h1>
+                    Más allá de
+                    <span>las estrellas.</span>
+                </h1>
+
+                <p>
+                    Descubre planetas, estrellas, galaxias y los
+                    misterios que forman parte de nuestro universo.
+                </p>
+
+                <div class="botones">
+
+                    <a href="#explorar" class="boton principal">
+                        Iniciar exploración →
+                    </a>
+
+                    <a href="#fenomenos" class="boton secundario">
+                        Descubrir fenómenos
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PLANETA -->
+            <div class="espacio">
+
+                <div class="orbita"></div>
+
+                <div class="planeta">
+
+                    <div class="continente uno"></div>
+                    <div class="continente dos"></div>
+                    <div class="continente tres"></div>
+
+                </div>
+
+                <span class="estrella estrella1">✦</span>
+                <span class="estrella estrella2">✧</span>
+                <span class="estrella estrella3">✦</span>
+
+            </div>
+
+        </section>
+
+
+        <!-- EXPLORAR -->
+        <section class="seccion" id="explorar">
+
+            <p class="subtitulo">
+                01 / EXPLORAR
+            </p>
+
+            <h2>
+                Elige tu próxima parada.
+            </h2>
+
+            <p class="descripcion">
+                Conoce algunos de los protagonistas del universo.
+            </p>
+
+
+            <div class="tarjetas">
+
+
+                <!-- PLANETAS -->
+                <article class="tarjeta">
+
+                    <div class="imagen planeta-imagen">
+                        <div class="planeta-pequeno"></div>
+                    </div>
+
+                    <div class="contenido">
+
+                        <span>01</span>
+
+                        <h3>
+                            Planetas
+                        </h3>
+
+                        <p>
+                            Mundos rocosos y gigantes gaseosos
+                            que orbitan alrededor de estrellas.
+                        </p>
+
+                        <button
+                            class="btn-info"
+                            onclick="mostrarInfo('planetas')">
+                            Explorar →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- ESTRELLAS -->
+                <article class="tarjeta">
+
+                    <div class="imagen estrella-imagen">
+                        <div class="sol"></div>
+                    </div>
+
+                    <div class="contenido">
+
+                        <span>02</span>
+
+                        <h3>
+                            Estrellas
+                        </h3>
+
+                        <p>
+                            Grandes esferas de gas que producen
+                            luz y energía.
+                        </p>
+
+                        <button
+                            class="btn-info"
+                            onclick="mostrarInfo('estrellas')">
+                            Explorar →
+                        </button>
+
+                    </div>
+
+                </article>
+
+
+                <!-- GALAXIAS -->
+                <article class="tarjeta">
+
+                    <div class="imagen galaxia-imagen">
+
+                        <div class="galaxia"></div>
+
+                    </div>
+
+                    <div class="contenido">
+
+                        <span>03</span>
+
+                        <h3>
+                            Galaxias
+                        </h3>
+
+                        <p>
+                            Grandes sistemas formados por estrellas,
+                            gas, polvo y materia oscura.
+                        </p>
+
+                        <button
+                            class="btn-info"
+                            onclick="mostrarInfo('galaxias')">
+                            Explorar →
+                        </button>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- FENÓMENOS -->
+        <section class="fenomenos" id="fenomenos">
+
+            <div>
+
+                <p class="subtitulo">
+                    02 / FENÓMENOS
+                </p>
+
+                <h2>
+                    Lo desconocido
+                    también nos atrae.
+                </h2>
+
+                <p>
+                    Algunos fenómenos astronómicos parecen
+                    sacados de una película, pero forman parte
+                    de la dinámica del universo.
+                </p>
+
+                <button
+                    class="boton principal"
+                    onclick="datoCosmico()">
+
+                    Dame un dato cósmico ✦
+
+                </button>
+
+                <p id="dato" class="dato"></p>
+
+            </div>
+
+
+            <!-- AGUJERO NEGRO -->
+            <div class="agujero">
+
+                <div class="anillo"></div>
+
+                <div class="agujero-centro"></div>
+
+                <span>
+                    AGUJERO<br>
+                    NEGRO
+                </span>
+
+            </div>
+
+        </section>
+
+
+        <!-- CURIOSIDADES -->
+        <section class="seccion" id="curiosidades">
+
+            <p class="subtitulo">
+                03 / CURIOSIDADES
+            </p>
+
+            <h2>
+                Pequeñas preguntas,
+                grandes respuestas.
+            </h2>
+
+
+            <div class="preguntas">
+
+
+                <button
+                    class="pregunta"
+                    onclick="mostrarPregunta(this)">
+
+                    <span>
+                        ¿Por qué el cielo nocturno es oscuro?
+                    </span>
+
+                    <strong>+</strong>
+
+                    <p>
+                        La oscuridad del cielo está relacionada
+                        con la expansión del universo y la
+                        distribución de las fuentes de luz.
+                    </p>
+
+                </button>
+
+
+                <button
+                    class="pregunta"
+                    onclick="mostrarPregunta(this)">
+
+                    <span>
+                        ¿Qué es una supernova?
+                    </span>
+
+                    <strong>+</strong>
+
+                    <p>
+                        Es una explosión estelar extremadamente
+                        energética que puede ocurrir al final
+                        de la vida de ciertas estrellas.
+                    </p>
+
+                </button>
+
+
+                <button
+                    class="pregunta"
+                    onclick="mostrarPregunta(this)">
+
+                    <span>
+                        ¿La Tierra está quieta?
+                    </span>
+
+                    <strong>+</strong>
+
+                    <p>
+                        No. La Tierra rota sobre su eje y también
+                        orbita alrededor del Sol.
+                    </p>
+
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- LLAMADO FINAL -->
+        <section class="final">
+
+            <div>
+
+                <p class="subtitulo">
+                    TU UNIVERSO, TU CURIOSIDAD
+                </p>
+
+                <h2>
+                    La exploración
+                    empieza aquí.
+                </h2>
+
+            </div>
+
+            <a href="#inicio" class="boton blanco">
+                Volver al inicio ↑
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+
+        <h3>
+            ✦ COSMOS
+        </h3>
+
+        <p>
+            Más allá de las estrellas.
+        </p>
+
+        <p>
+            Proyecto académico de Aplicaciones de Diseño - 2026
+        </p>
+
+    </footer>
+
+
+    <!-- VENTANA DE INFORMACIÓN -->
+    <div class="modal" id="modal">
+
+        <div class="modal-contenido">
+
+            <button
+                class="cerrar"
+                onclick="cerrarModal()">
+                ×
+            </button>
+
+            <p class="subtitulo">
+                DESCUBRIMIENTO
+            </p>
+
+            <h2 id="tituloModal">
+                Información
+            </h2>
+
+            <p id="textoModal">
+                Información astronómica.
+            </p>
+
+            <button
+                class="boton principal"
+                onclick="cerrarModal()">
+
+                Continuar explorando
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Conexión con JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
